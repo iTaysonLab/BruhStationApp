@@ -1,0 +1,25 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.26944444444444443" />
+        <entry key="app/src/main/res/drawable/round_library_books_20.xml" value="0.26944444444444443" />
+        <entry key="app/src/main/res/layout/activity_core.xml" value="0.2980072463768116" />
+        <entry key="app/src/main/res/layout/activity_left_menu.xml" value="0.2980072463768116" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2980072463768116" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/fragment_game_catalog.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/fragment_landing.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/item_dashboard_item.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/item_lm_header.xml" value="0.29393115942028986" />
+        <entry key="app/src/main/res/layout/item_lm_item.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/item_lm_шеуь.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/item_scalable_grid.xml" value="0.38697916666666665" />
+        <entry key="app/src/main/res/layout/sheet_stats.xml" value="0.381025641025641" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK" />
+</project>

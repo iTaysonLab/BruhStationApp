@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option java_package = "bruhcollective.itaysonlab.psapp.prefs.internal";
+option java_multiple_files = true;
+
+message BSAppPreferences {
+  BSAuthData auth = 1;
+  repeated UserRegisteredDevice device = 2;
+  UserInfo user = 3;
+}
+
+message BSAuthData {
+  string oauth_code = 1;
+  string oauth_cid = 2;
+  string account_token = 3;
+  int32 account_token_expires_in = 4;
+  string id_token = 5;
+  string refresh_token = 6;
+  int32 refresh_token_expires_in = 7;
+  string npsso = 8;
+
+  int64 token_acq_time = 9;
+  int64 refresh_token_acq_time = 10;
+}
+
+message UserRegisteredDevice {
+  string device_type = 1;
+  string device_id = 2;
+  string account_device_vector = 3;
+  string activationType = 4;
+  string activationDate = 5;
+  string device_name = 6;
+}
+
+message UserInfo {
+  string user_id = 1;
+  string psn_id = 2;
+  bool is_plus = 3;
+  repeated UserAvatar avatars = 4;
+  UserPersonalDetail detail = 5;
+}
+
+message UserAvatar {
+  string url = 1;
+  string size = 2;
+}
+
+message UserPersonalDetail {
+  string first_name = 1;
+  string last_name = 2;
+}

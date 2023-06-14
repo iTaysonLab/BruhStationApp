@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_landing">
+
+    <fragment
+        android:id="@+id/navigation_landing"
+        android:name="bruhcollective.itaysonlab.psapp.ui.landing.LandingFragment"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_navigation_landing_to_navigation_auth"
+            app:destination="@id/navigation_web_auth"
+            app:enterAnim="@anim/sec_activity_open_enter"
+            app:popExitAnim="@anim/sec_activity_close_exit" />
+        <action
+            android:id="@+id/action_navigation_landing_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpTo="@+id/navigation_landing"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_web_auth"
+        android:name="bruhcollective.itaysonlab.psapp.ui.auth.WebAuthFragment"
+        android:label="Sign in"
+        tools:layout="@layout/fragment_web_auth">
+        <action
+            android:id="@+id/action_navigation_web_auth_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="bruhcollective.itaysonlab.psapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="bruhcollective.itaysonlab.psapp.ui.dashboard.LibraryFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="bruhcollective.itaysonlab.psapp.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

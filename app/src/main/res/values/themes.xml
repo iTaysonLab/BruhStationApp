@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.BruhStationApp" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/sky_300</item>
+        <item name="colorPrimaryVariant">@color/sky_300</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorSecondary">@color/sky_300</item>
+        <item name="colorAccent">@color/sky_300</item>
+        <item name="colorSecondaryVariant">@color/sky_300</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetDialogTheme">@style/BruhStationSheetDialog</item>
+    </style>
+
+    <style name="BruhStationSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BruhStationSheet</item>
+    </style>
+
+    <style name="BruhStationSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/BSAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="BSAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>
